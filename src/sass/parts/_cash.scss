@@ -1,0 +1,164 @@
+.cash {
+    background: url('../assets/background_cash.png'), #f2e7d5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+    z-index: 2;
+    &-stolb {
+        position: absolute;
+        top: -205px;
+        left: -33px;
+    }
+    &-title {
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 120%;
+        text-align: center;
+        color: #393e46;
+        margin-bottom: 45px;
+    }
+    &-ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column-gap: 15px;
+        margin-bottom: 45px;
+    }
+    &-li {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 56px;
+        &:nth-child(1) {
+            max-width: 229px;
+        }
+        &:nth-child(2) {
+            max-width: 281px;
+        }
+        &:nth-child(3) {
+            max-width: 260px;
+        }
+        &-title {
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 120%;
+            text-align: center;
+            color: #6d9886;
+        }
+        &-text {
+            font-family: 'Gotham';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+            text-align: center;
+            color: #393e46;
+        }
+        &-img {
+            position: absolute;
+            z-index: -1;
+            top: 78px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &-subtitle {
+        font-family: 'Gotham';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        color: #393e46;
+        max-width: 883px;
+        margin: 0 auto 45px;
+    }
+    &-krit {
+        max-width: 515px;
+        margin: 0 auto;
+        &-title {
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 120%;
+            text-align: center;
+            color: #393e46;
+            position: relative;
+            width: fit-content;
+            margin: 0 auto 45px;
+            &::after {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 45px;
+                left: -55px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #6d9886;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 45px;
+                right: -55px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #6d9886;
+            }
+        }
+        &-ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+        }
+        &-li {
+            position: relative;
+            font-family: 'Gotham';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+            color: #393e46;
+            &:nth-child(1) {
+                &::after {
+                    content: '';
+                    height: 64px;
+                    width: 2px;
+                    background: #6d9886;
+                    position: absolute;
+                    right: 19px;
+                    top: -69px;
+                }
+            }
+            &:nth-child(2) {
+                &::after {
+                    content: '';
+                    height: 35px;
+                    width: 2px;
+                    background: #6d9886;
+                    position: absolute;
+                    right: 42px;
+                    top: -41px;
+                }
+            }
+            &:nth-child(3) {
+                &::after {
+                    content: '';
+                    height: 64px;
+                    width: 2px;
+                    background: #6d9886;
+                    position: absolute;
+                    right: 55px;
+                    top: -69px;
+                }
+            }
+        }
+    }
+}
