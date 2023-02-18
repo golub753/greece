@@ -1,0 +1,231 @@
+.authors {
+    padding: 75px 0;
+    position: relative;
+    &-afra {
+        position: absolute;
+        right: 0;
+        top: -100px;
+    }
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 580px 623px;
+        grid-column-gap: 43px;
+    }
+    &-slider {
+        &-photos {
+            height: 809px;
+            .slick-list {
+                height: 100%;
+            }
+        }
+        &-info {
+            .slick-dots {
+                position: absolute;
+                top: -77px;
+                left: 16px;
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                li {
+                    display: none;
+                }
+                li.slick-active {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 134px;
+                    height: 44px;
+                    background: #6d9886;
+                    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.25), inset 2px 4px 6px rgba(255, 255, 255, 0.25);
+                    border-radius: 10px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 120%;
+                    text-align: center;
+                    color: #f2e7d5;
+                }
+            }
+        }
+    }
+    &-slide {
+        &-arr {
+            position: absolute;
+            cursor: pointer;
+            z-index: 3;
+            &--prev {
+                top: -70px;
+                left: 0;
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+            &--next {
+                top: -59px;
+                left: 200px;
+            }
+            &--next.slick-disabled,
+            &--prev.slick-disabled {
+                opacity: 0.6;
+            }
+        }
+        &-photos {
+            z-index: 1;
+            filter: blur(5px);
+            position: relative;
+            transition: 0.3s;
+            height: 450px !important;
+            display: flex !important;
+            align-items: flex-end;
+            &-photo {
+                position: relative;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                background: url('../assets/bud_back.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: 0.3s;
+                img {
+                    height: 108px;
+                    object-fit: cover;
+                    width: 108px;
+                    border-radius: 50%;
+                    transition: 0.3s;
+                }
+            }
+            &-stolb {
+                transition: 0.3s;
+                position: absolute;
+                left: 8px;
+                top: 419px;
+                width: 150px;
+                height: 207px;
+            }
+        }
+        &-photos.slick-current {
+            z-index: 3;
+            filter: blur(0);
+            position: relative;
+            .authors-slide-photos-photo {
+                width: 450px;
+                height: 450px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: url('../assets/bud_back.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                img {
+                    height: 310px;
+                    object-fit: cover;
+                    width: 310px;
+                    border-radius: 50%;
+                }
+            }
+            .authors-slide-photos-stolb {
+                position: absolute;
+                top: 420px;
+                left: -80px;
+                width: 653px;
+                height: 749px;
+            }
+        }
+
+        &-photos.slick-current + .slick-slide {
+            z-index: 2;
+            position: relative;
+            .authors-slide-photos-photo {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: url('../assets/bud_back.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                img {
+                    width: 210px;
+                    height: 210px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            .authors-slide-photos-stolb {
+                position: absolute;
+                top: 420px;
+                left: 23px;
+                width: 300px;
+                height: 414px;
+            }
+        }
+        &-info {
+            &__name {
+                font-weight: 400;
+                font-size: 64px;
+                line-height: 120%;
+                color: #6d9886;
+                margin-bottom: 30px;
+                max-width: 295px;
+            }
+            &__title {
+                font-family: 'Gotham';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 120%;
+                text-transform: uppercase;
+                color: #393e46;
+                margin-bottom: 15px;
+            }
+            &__link {
+                display: flex;
+                width: fit-content;
+                margin-bottom: 30px;
+                padding: 15px 30px;
+                background: #6d9886;
+                box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.25), inset 4px 6px 8px rgba(255, 255, 255, 0.4),
+                    inset -4px -6px 8px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                text-decoration: none;
+                cursor: pointer;
+                font-family: 'Gotham';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 120%;
+                text-align: center;
+                text-transform: uppercase;
+                color: #f7f7f7;
+            }
+            &-ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                grid-row-gap: 15px;
+                list-style-type: none;
+            }
+            &-li {
+                padding-left: 40px;
+                font-family: 'Gotham';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 120%;
+                color: #393e46;
+                background-image: url('../assets/background-li.svg');
+                background-size: 14px 14px;
+                background-position: 0 50%;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

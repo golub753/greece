@@ -18,6 +18,30 @@ $(document).ready(() => {
         },
     });
     $('.helps-slider').slick('slickGoTo', 2);
+    $('.authors-slider-photos').slick({
+        arrows: false,
+        infinite: false,
+        centerPadding: '100px',
+        slidesToShow: 3,
+        dots: false,
+        asNavFor: '.authors-slider-info',
+    });
+    $('.authors-slider-info').slick({
+        arrows: true,
+        infinite: false,
+        slidesToShow: 1,
+        dots: true,
+        nextArrow: `<div class="authors-slide-arr authors-slide-arr--next">
+        <img src="../src/assets/authors-arrow.svg" alt="">
+        </div>`,
+        prevArrow: `<div class="authors-slide-arr authors-slide-arr--prev">
+        <img src="../src/assets/authors-arrow.svg" alt="">
+        </div>`,
+        customPaging(slider, i) {
+            return `<span class="active">${i + 1}</span>/${slider.slideCount}`;
+        },
+        asNavFor: '.authors-slider-photos',
+    });
     function switchTabs() {
         const tabs = document.querySelectorAll('.info-right-stoun-tab'),
             contents = document.querySelectorAll('.info-right-stoun-content');

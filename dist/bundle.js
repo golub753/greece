@@ -19,6 +19,26 @@ $(document).ready(function () {
     }
   });
   $('.helps-slider').slick('slickGoTo', 2);
+  $('.authors-slider-photos').slick({
+    arrows: false,
+    infinite: false,
+    centerPadding: '100px',
+    slidesToShow: 3,
+    dots: false,
+    asNavFor: '.authors-slider-info'
+  });
+  $('.authors-slider-info').slick({
+    arrows: true,
+    infinite: false,
+    slidesToShow: 1,
+    dots: true,
+    nextArrow: "<div class=\"authors-slide-arr authors-slide-arr--next\">\n        <img src=\"../src/assets/authors-arrow.svg\" alt=\"\">\n        </div>",
+    prevArrow: "<div class=\"authors-slide-arr authors-slide-arr--prev\">\n        <img src=\"../src/assets/authors-arrow.svg\" alt=\"\">\n        </div>",
+    customPaging: function customPaging(slider, i) {
+      return "<span class=\"active\">".concat(i + 1, "</span>/").concat(slider.slideCount);
+    },
+    asNavFor: '.authors-slider-photos'
+  });
   function switchTabs() {
     var tabs = document.querySelectorAll('.info-right-stoun-tab'),
       contents = document.querySelectorAll('.info-right-stoun-content');
