@@ -1,0 +1,40 @@
+.gifts {
+    padding: 75px 0 75px;
+    &-title {
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 120%;
+        text-align: center;
+        color: #393e46;
+        margin-bottom: 45px;
+    }
+    &-subtitle {
+        font-family: 'Gotham';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 594px;
+        color: #393e46;
+        margin: 0 auto 30px;
+    }
+    &-text {
+        font-family: 'Gotham';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        color: #393e46;
+        margin-bottom: 30px;
+    }
+    &-blocks {
+        display: grid;
+        grid-template-columns: minmax(1px, 250px) minmax(1px, 520px) minmax(1px, 250px);
+        grid-gap: 20px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}

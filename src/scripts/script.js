@@ -1,30 +1,23 @@
 import '../sass/style.scss';
 
 $(document).ready(() => {
-    // const modal = document.querySelector('.modal'),
-    //     overlay = document.querySelector('.overlay');
-
-    // function openModal() {
-    //     const btns = document.querySelectorAll('.btn');
-    //     btns.forEach((btn) => {
-    //         btn.addEventListener('click', () => {
-    //             const title = btn.getAttribute('data-title');
-    //             if (title) {
-    //                 modal.querySelector('.modal-subtitle').textContent = title;
-    //             }
-    //             modal.classList.add('active');
-    //             overlay.classList.add('active');
-    //         });
-    //     });
-    // }
-
-    // function closeModal() {
-    //     overlay.addEventListener('click', () => {
-    //         modal.classList.remove('active');
-    //         overlay.classList.remove('active');
-    //     });
-    // }
-
+    $('.helps-slider').slick({
+        infinite: false,
+        centerMode: true,
+        centerPadding: '30px',
+        slidesToShow: 3,
+        dots: true,
+        nextArrow: `<div class="helps-slide-arr helps-slide-arr--next">
+        <img src="../src/assets/helps_arrow.svg" alt="">
+        </div>`,
+        prevArrow: `<div class="helps-slide-arr helps-slide-arr--prev">
+        <img src="../src/assets/helps_arrow.svg" alt="">
+        </div>`,
+        customPaging(slider, i) {
+            return `<span class="active">${i + 1}</span>/${slider.slideCount}`;
+        },
+    });
+    $('.helps-slider').slick('slickGoTo', 2);
     function switchTabs() {
         const tabs = document.querySelectorAll('.info-right-stoun-tab'),
             contents = document.querySelectorAll('.info-right-stoun-content');
@@ -44,7 +37,22 @@ $(document).ready(() => {
         });
     }
 
-    // openModal();
-    // closeModal();
+    function smoothScroll() {
+        const header = document.querySelector('.header');
+        const smoothLinks = header.querySelectorAll('a[href^="#"]');
+        for (const smoothLink of smoothLinks) {
+            smoothLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                const id = smoothLink.getAttribute('href');
+
+                document.querySelector(id).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+            });
+        }
+    }
+
     switchTabs();
+    smoothScroll();
 });

@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../src/assets/slick.css" />
         <title>Greece</title>
     </head>
     <body>
@@ -12,20 +13,20 @@
             <header class="header">
                 <div class="container">
                     <div class="header-wrapper">
-                        <a href="" class="header-home"> <img src="../src/assets/logo.svg" alt="" class="header-home__img" /></a>
+                        <a href="/" class="header-home"> <img src="../src/assets/logo.svg" alt="" class="header-home__img" /></a>
                         <nav class="header-nav">
                             <ul class="header-nav-ul">
                                 <li class="header-nav-li">
-                                    <a href="" class="header-nav-li__link">Расписание</a>
+                                    <a href="#timing" class="header-nav-li__link">Расписание</a>
                                 </li>
                                 <li class="header-nav-li">
-                                    <a href="" class="header-nav-li__link">спикеры</a>
+                                    <a href="#speakers" class="header-nav-li__link">спикеры</a>
                                 </li>
                                 <li class="header-nav-li">
                                     <a href="" class="header-nav-li__link">стать партнёром</a>
                                 </li>
                                 <li class="header-nav-li">
-                                    <a href="" class="header-nav-li__link">купить билет</a>
+                                    <a href="#rates" class="header-nav-li__link">купить билет</a>
                                 </li>
                             </ul>
                         </nav>
@@ -110,7 +111,7 @@
         </div>
         <div class="disciplines">
             <div class="container">
-                <div class="disciplines-title">Дисциплины и расписание</div>
+                <div id="timing" class="disciplines-title">Дисциплины и расписание</div>
                 <div class="disciplines-blocks">
                     <div class="disciplines-block">
                         <div class="disciplines-block__title">30<br />часов</div>
@@ -570,7 +571,7 @@
                 </div>
             </div>
         </div>
-        <div class="speakers">
+        <div id="speakers" class="speakers">
             <div class="container">
                 <div class="speakers-title">спикеры</div>
                 <div class="speakers-blocks">
@@ -762,6 +763,205 @@
                 <button class="secrets-button">Наблюдать изнутри</button>
             </div>
         </div>
+        <div class="gifts">
+            <div class="container">
+                <div class="gifts-title">время подарков!</div>
+                <div class="gifts-subtitle">Среди всех участников каждый день будет проходить розыгрыш денежных средств!</div>
+                <div class="gifts-text">А также будут разыграны:</div>
+                <div class="gifts-blocks">
+                    <div class="gifts-block"><img src="../src/assets/gift_1.png" alt="" class="gifts-block__img" /></div>
+                    <div class="gifts-block"><img src="../src/assets/gift_2.png" alt="" class="gifts-block__img" /></div>
+                    <div class="gifts-block"><img src="../src/assets/gift_3.png" alt="" class="gifts-block__img" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="bloger">
+            <div class="container">
+                <img src="../src/assets/bloger.png" alt="" class="bloger-img" />
+                <button class="bloger-button">Я блогер, хочу рассказать о мероприятии и попасть в список царей олимпа</button>
+            </div>
+        </div>
+        <div id="rates" class="rates">
+            <div class="container">
+                <div class="rates-title">тарифы</div>
+                <div class="rates-blocks">
+                    <div class="rates-block">
+                        <img src="../src/assets/aristocrat.png" alt="" class="rates-block__img" />
+                        <div class="rates-block-block">
+                            <div class="rates-block-block-wrapper">
+                                <div class="rates-block-block__title">аристократ</div>
+                                <ul class="rates-block-block-ul">
+                                    <li class="rates-block-block-li">Все спикеры 3 дня</li>
+                                    <li class="rates-block-block-li">Общий чат</li>
+                                    <li class="rates-block-block-li">
+                                        Запись в высоком качестве выступлений всех спикеров с доступом на 3 месяца
+                                    </li>
+                                </ul>
+                                <button class="rates-block-block-button">Принять участие за 20$</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rates-block">
+                        <img src="../src/assets/zeus.png" alt="" class="rates-block__img" />
+                        <div class="rates-block-block">
+                            <div class="rates-block-block-wrapper">
+                                <div class="rates-block-block__title">ЗЕВС</div>
+                                <ul class="rates-block-block-ul">
+                                    <li class="rates-block-block-li">Все спикеры 4 дня</li>
+                                    <li class="rates-block-block-li">Общий чат</li>
+                                    <li class="rates-block-block-li">
+                                        Запись в высоком качестве выступлений всех спикеров с доступом на 3 месяца
+                                    </li>
+                                    <li class="rates-block-block-li">Доступ к закрытому каналу о подготовке к CASH-Олимпиаде</li>
+                                    <li class="rates-block-block-li">Отдельный чат со спикерами и покупателями VIP-тарифа</li>
+                                    <li class="rates-block-block-li">Больший вес в оценке выступлений спикеров</li>
+                                    <li class="rates-block-block-li">Специальный статус "Царя Олимпа" на мероприятии</li>
+                                    <li class="rates-block-block-li">Отдельные призы от спонсоров</li>
+                                    <li class="rates-block-block-li">Размещение на сайте в блоке "Цари Олимпа"</li>
+                                    <li class="rates-block-block-li">Розыгрыш на 1 рекламное место во время олимпиады</li>
+                                    <li class="rates-block-block-li">Розыгрыш 20 минут выступления в качестве спикера</li>
+                                </ul>
+                                <button class="rates-block-block-button">принять участие за 1000$</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rates-block">
+                        <img src="../src/assets/fil.png" alt="" class="rates-block__img" />
+                        <div class="rates-block-block">
+                            <div class="rates-block-block-wrapper">
+                                <div class="rates-block-block__title">философ</div>
+                                <ul class="rates-block-block-ul">
+                                    <li class="rates-block-block-li">Все спикеры 4 дня</li>
+                                    <li class="rates-block-block-li">Общий чат</li>
+                                    <li class="rates-block-block-li">
+                                        Запись в высоком качестве выступлений всех спикеров с доступом на 3 месяца
+                                    </li>
+                                    <li class="rates-block-block-li">Доступ к закрытому каналу о подготовке к CASH-Олимпиаде</li>
+                                </ul>
+                                <button class="rates-block-block-button">принять учатие за 30$</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rates-free">
+                    <div class="rates-free-wrapper">
+                        <div class="rates-free-title">бесплатный билет</div>
+                        <div class="rates-free-text">
+                            Нажмите на кнопку и узнайте, как смотреть <b>выступления всех спикеров 3 дня</b> и получить
+                            <b>доступ в общий чат</b>
+                        </div>
+                        <button class="rates-free-button">участвовать бесплатно</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="helps">
+            <div class="container">
+                <div class="helps-title">CAsh-олимпиада проводится при поддержке царей олимпа</div>
+                <div class="helps-slider">
+                    <div class="helps-slide">
+                        <div class="helps-slide-block">
+                            <div class="helps-slide-block-ramka">
+                                <img src="../src/assets/image.png" alt="" class="helps-slide-block__img" />
+                            </div>
+                            <div class="helps-slide-block__name">Мистер пропер</div>
+                            <a href="#" class="helps-slide-block__link">@mr.proper</a>
+                        </div>
+                    </div>
+                    <div class="helps-slide">
+                        <div class="helps-slide-block">
+                            <div class="helps-slide-block-ramka">
+                                <img src="../src/assets/image.png" alt="" class="helps-slide-block__img" />
+                            </div>
+                            <div class="helps-slide-block__name">Мистер пропер</div>
+                            <a href="#" class="helps-slide-block__link">@mr.proper</a>
+                        </div>
+                    </div>
+                    <div class="helps-slide">
+                        <div class="helps-slide-block">
+                            <div class="helps-slide-block-ramka">
+                                <img src="../src/assets/image.png" alt="" class="helps-slide-block__img" />
+                            </div>
+                            <div class="helps-slide-block__name">Мистер пропер</div>
+                            <a href="#" class="helps-slide-block__link">@mr.proper</a>
+                        </div>
+                    </div>
+                    <div class="helps-slide">
+                        <div class="helps-slide-block">
+                            <div class="helps-slide-block-ramka">
+                                <img src="../src/assets/image.png" alt="" class="helps-slide-block__img" />
+                            </div>
+                            <div class="helps-slide-block__name">Мистер пропер</div>
+                            <a href="#" class="helps-slide-block__link">@mr.proper</a>
+                        </div>
+                    </div>
+                    <div class="helps-slide">
+                        <div class="helps-slide-block">
+                            <div class="helps-slide-block-ramka">
+                                <img src="../src/assets/image.png" alt="" class="helps-slide-block__img" />
+                            </div>
+                            <div class="helps-slide-block__name">Мистер пропер</div>
+                            <a href="#" class="helps-slide-block__link">@mr.proper</a>
+                        </div>
+                    </div>
+                    <div class="helps-slide">
+                        <div class="helps-slide-block">
+                            <div class="helps-slide-block-ramka">
+                                <img src="../src/assets/image.png" alt="" class="helps-slide-block__img" />
+                            </div>
+                            <div class="helps-slide-block__name">Мистер пропер</div>
+                            <a href="#" class="helps-slide-block__link">@mr.proper</a>
+                        </div>
+                    </div>
+                    <div class="helps-slide">
+                        <div class="helps-slide-block">
+                            <div class="helps-slide-block-ramka">
+                                <img src="../src/assets/image.png" alt="" class="helps-slide-block__img" />
+                            </div>
+                            <div class="helps-slide-block__name">Мистер пропер</div>
+                            <a href="#" class="helps-slide-block__link">@mr.proper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="socials">
+            <div class="container">
+                <div class="socials-title">Подписывайтесь на соц. сети, чтобы быть вкурсе всех самых актуальных новостей</div>
+                <div class="socials-blocks">
+                    <a href="#" class="socials-block">instagram</a>
+                    <a href="#" class="socials-block">youtube</a>
+                    <a href="#" class="socials-block">tiktok</a>
+                    <a href="#" class="socials-block">telegram</a>
+                </div>
+            </div>
+        </div>
+        <div class="part">
+            <div class="container">
+                <div class="part-title">наши партнеры</div>
+                <div class="part-blocks">
+                    <div class="part-block">Logo</div>
+                    <div class="part-block">Logo</div>
+                    <div class="part-block">Logo</div>
+                    <div class="part-block">Logo</div>
+                    <div class="part-block">Logo</div>
+                    <div class="part-block">Logo</div>
+                    <div class="part-block">Logo</div>
+                    <div class="part-block">Logo</div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="mailto:sfotkal@gmail.com" class="footer-mail">sfotkal@gmail.com</a>
+                <div class="footer-address">Минск, Гурского 33, 11 ИП Будилович Д.В. 690865072</div>
+                <div class="footer-unp">УНП 690865072 Р/с BY52ALFA30132478910010270000 в ЗАО “Альфа-Банк” код банка ALFABY2X</div>
+                <a href="#" class="footer-politics">Политика конфиденциальности</a>
+                <a href="#" class="footer-pravila">Правила возврата</a>
+                <a href="#" class="footer-dogovor">Договор оферты</a>
+            </div>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="../src/assets/slick.min.js"></script>
     </body>
 </html>

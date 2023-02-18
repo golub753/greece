@@ -1,0 +1,30 @@
+.bloger {
+    padding: 674px 0 89px;
+    position: relative;
+    &-img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 45px;
+        z-index: -1;
+    }
+    &-button {
+        width: 830px;
+        height: 126px;
+        background: #6d9886;
+        box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.25), inset 4px 6px 8px rgba(255, 255, 255, 0.4), inset -4px -6px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        color: #f7f7f7;
+    }
+}
