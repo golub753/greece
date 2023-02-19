@@ -42,6 +42,30 @@ $(document).ready(() => {
         },
         asNavFor: '.authors-slider-photos',
     });
+    $('.speakers-persons').slick({
+        infinite: false,
+        mobileFirst: true,
+        centerPadding: '30px',
+        slidesToShow: 3,
+        centerMode: true,
+        dots: true,
+        nextArrow: `<div class="speakers-persons-arr speakers-persons-arr--next">
+        <img src="../src/assets/authors-arrow.svg" alt="">
+        </div>`,
+        prevArrow: `<div class="speakers-persons-arr speakers-persons-arr--prev">
+        <img src="../src/assets/authors-arrow.svg" alt="">
+        </div>`,
+        customPaging(slider, i) {
+            return `<span class="active">${i + 1}</span>/${slider.slideCount}`;
+        },
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: 'unslick',
+            },
+        ],
+    });
+    $('.speakers-persons').slick('slickGoTo', 3);
     function switchTabs() {
         const tabs = document.querySelectorAll('.info-right-stoun-tab'),
             contents = document.querySelectorAll('.info-right-stoun-content');
@@ -64,10 +88,14 @@ $(document).ready(() => {
     function smoothScroll() {
         const header = document.querySelector('.header');
         const smoothLinks = header.querySelectorAll('a[href^="#"]');
+        const headerNav = document.querySelector('.header-nav'),
+            burger = document.querySelector('.burger');
         for (const smoothLink of smoothLinks) {
             smoothLink.addEventListener('click', (e) => {
                 e.preventDefault();
                 const id = smoothLink.getAttribute('href');
+                burger.classList.remove('active');
+                headerNav.classList.remove('active');
 
                 document.querySelector(id).scrollIntoView({
                     behavior: 'smooth',
@@ -77,6 +105,17 @@ $(document).ready(() => {
         }
     }
 
+    function openMenu() {
+        const headerNav = document.querySelector('.header-nav'),
+            burger = document.querySelector('.burger');
+
+        burger.addEventListener('click', () => {
+            headerNav.classList.toggle('active');
+            burger.classList.toggle('active');
+        });
+    }
+
     switchTabs();
     smoothScroll();
+    openMenu();
 });
