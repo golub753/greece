@@ -8,7 +8,7 @@
     }
     &-wrapper {
         display: grid;
-        grid-template-columns: 580px 623px;
+        grid-template-columns: minmax(1px, 580px) minmax(1px, 623px);
         grid-column-gap: 43px;
     }
     &-slider {

@@ -3,7 +3,8 @@
     padding-bottom: 137px;
     background: url('../assets/background_rates.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: 100% 100%;
     &-title {
         font-weight: 400;
         font-size: 64px;
@@ -199,7 +200,7 @@
         }
     }
     &-free {
-        width: 386px;
+        width: 397px;
         height: 276px;
         background: #f2e7d5;
         border: 2px solid #6d9886;

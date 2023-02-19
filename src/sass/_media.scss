@@ -1,0 +1,71 @@
+@media (max-width: 1380px) {
+    .disciplines {
+        &-title {
+            display: none;
+            &--mobile {
+                display: block;
+            }
+        }
+    }
+    .info {
+        &-wrapper {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px 0 10px;
+        }
+        &-title {
+            &--mobile {
+                display: block;
+                font-size: 40px;
+                line-height: 120%;
+                margin-bottom: 9px;
+            }
+        }
+        &-chel {
+            left: 320px;
+            width: 375px;
+        }
+        &-right {
+            &-stoun {
+                max-width: 740px;
+                &-tab {
+                    width: 125px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1280px) {
+    .main {
+        &-god {
+            left: -50px;
+        }
+    }
+    .info {
+        &-chel {
+            left: 135px;
+        }
+    }
+    .speakers {
+        &-persons {
+            grid-column-gap: 10px;
+        }
+    }
+    .world {
+        &_1 {
+            top: 245px;
+            width: 363px;
+        }
+        &_2 {
+            top: 208px;
+            width: 300px;
+        }
+    }
+    .partners {
+        &-coopi {
+            top: 732px;
+            width: 298px;
+        }
+    }
+}

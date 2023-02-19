@@ -10,6 +10,9 @@
         text-align: center;
         color: #393e46;
         margin-bottom: 30px;
+        &--mobile {
+            display: none;
+        }
     }
     &-blocks {
         display: grid;
