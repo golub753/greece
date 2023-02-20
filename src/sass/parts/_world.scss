@@ -1,18 +1,18 @@
 .world {
-    padding-top: 214px;
+    padding-top: 110px;
     padding-bottom: 112px;
     background: #f2e7d5;
     // filter: blur(75px);
     position: relative;
     &_1 {
         position: absolute;
-        top: 50px;
+        top: -110px;
         left: -66px;
     }
     &_2 {
         position: absolute;
         right: 0px;
-        top: 45px;
+        top: -270px;
     }
     &-block {
         width: 593px;
