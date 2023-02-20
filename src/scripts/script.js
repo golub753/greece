@@ -64,7 +64,7 @@ $(document).ready(() => {
         infinite: false,
         mobileFirst: true,
         centerPadding: '30px',
-        slidesToShow: 1,
+        slidesToShow: 3,
         centerMode: true,
         dots: true,
         nextArrow: `<div class="speakers-persons-arr speakers-persons-arr--next">
@@ -81,12 +81,12 @@ $(document).ready(() => {
                 breakpoint: 1024,
                 settings: 'unslick',
             },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3,
-                },
-            },
+            // {
+            //     breakpoint: 768,
+            //     settings: {
+            //         slidesToShow: 3,
+            //     },
+            // },
         ],
     });
     $('.speakers-persons').slick('slickGoTo', 3);

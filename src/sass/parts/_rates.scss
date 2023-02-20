@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100% 100%;
+    position: relative;
     &-title {
         font-weight: 400;
         font-size: 64px;
@@ -247,5 +248,13 @@
             box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.25), inset 2px 4px 6px rgba(255, 255, 255, 0.25);
             border-radius: 10px;
         }
+    }
+    &-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        object-fit: cover;
     }
 }
