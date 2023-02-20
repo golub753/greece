@@ -61,7 +61,7 @@ $(document).ready(function () {
     centerMode: true,
     dots: true,
     nextArrow: "<div class=\"speakers-persons-arr speakers-persons-arr--next\">\n        <img src=\"../src/assets/authors-arrow.svg\" alt=\"\">\n        </div>",
-    prevArrow: "<div class=\"speakers-persons-arr speakers-persons-arr--prev\">\n        <img src=\"../src/assets/authors-arrow.svg\" alt=\"\">\n        </div>",
+    prevArrow: "<div class=\"speakers-persons-arr speakers-persons-arr--prev\">\n        <img src=\"../src/assets/authors-arrow-prev.svg\" alt=\"\">\n        </div>",
     customPaging: function customPaging(slider, i) {
       return "<span class=\"active\">".concat(i + 1, "</span>/").concat(slider.slideCount);
     },

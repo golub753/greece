@@ -290,9 +290,6 @@
                     position: absolute;
                     bottom: -70px;
                     left: 37%;
-                    img {
-                        transform: rotate(180deg);
-                    }
                 }
                 &--next {
                     position: absolute;
@@ -738,8 +735,8 @@
             height: 154px !important;
             &-arr {
                 &--prev {
-                    bottom: -66px;
-                    left: 19%;
+                    bottom: -77px;
+                    left: 21%;
                 }
                 &--next {
                     bottom: -78px;
