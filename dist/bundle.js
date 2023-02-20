@@ -14,6 +14,9 @@ $(document).ready(function () {
     dots: true,
     nextArrow: "<div class=\"helps-slide-arr helps-slide-arr--next\">\n        <img src=\"../src/assets/helps_arrow.svg\" alt=\"\">\n        </div>",
     prevArrow: "<div class=\"helps-slide-arr helps-slide-arr--prev\">\n        <img src=\"../src/assets/helps_arrow.svg\" alt=\"\">\n        </div>",
+    customPaging: function customPaging(slider, i) {
+      return "<span class=\"active\">".concat(i + 1, "</span>/").concat(slider.slideCount);
+    },
     responsive: [{
       breakpoint: 768,
       settings: {
