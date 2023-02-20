@@ -1,0 +1,92 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 629px;
+    height: 234px;
+    background: #393e46;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25), inset 2px 3px 4px rgba(255, 255, 255, 0.4), inset -2px -3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    z-index: 16;
+    &-wrapper {
+        position: relative;
+        padding: 30px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &-title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+    &-continue {
+        text-decoration: none;
+        width: 509px;
+        height: 44px;
+        background: #f2e7d5;
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25), inset 2px 3px 4px rgba(255, 255, 255, 0.4), inset -2px -3px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-family: 'Gotham';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #393e46;
+        margin-bottom: 15px;
+    }
+    &-not {
+        width: 215px;
+        height: 37px;
+        background: #6d9886;
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25), inset 2px 3px 4px rgba(255, 255, 255, 0.4), inset -2px -3px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Gotham';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #f2e7d5;
+        cursor: pointer;
+    }
+    &-close {
+        position: absolute;
+        cursor: pointer;
+        top: 25px;
+        right: 25px;
+    }
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+    background: rgba($color: #000000, $alpha: 0.6);
+}
+.modal.active {
+    display: block;
+}
+.overlay.active {
+    display: block;
+}

@@ -20,8 +20,8 @@ $(document).ready(function () {
     responsive: [{
       breakpoint: 768,
       settings: {
-        slidesToShow: 1,
-        centerPadding: '100px'
+        slidesToShow: 3,
+        centerPadding: '0'
       }
     }]
   });
@@ -109,6 +109,7 @@ $(document).ready(function () {
     });
   }
   function smoothScroll() {
+    var mainButton = document.querySelector('.main-button');
     var header = document.querySelector('.header');
     var smoothLinks = header.querySelectorAll('a[href^="#"]');
     var headerNav = document.querySelector('.header-nav'),
@@ -137,6 +138,14 @@ $(document).ready(function () {
     } finally {
       _iterator.f();
     }
+    mainButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      var id = mainButton.getAttribute('href');
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
   }
   function openMenu() {
     var headerNav = document.querySelector('.header-nav'),
@@ -146,9 +155,42 @@ $(document).ready(function () {
       burger.classList.toggle('active');
     });
   }
+  function openModal() {
+    var btns = document.querySelectorAll('.rates-block-block-button'),
+      modal = document.querySelector('.modal'),
+      overlay = document.querySelector('.overlay'),
+      rates = document.querySelector('.rates-free-button');
+    btns.forEach(function (item) {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        modal.classList.add('active');
+        overlay.classList.add('active');
+      });
+    });
+    rates.addEventListener('click', function (e) {
+      e.preventDefault();
+      modal.classList.add('active');
+      overlay.classList.add('active');
+    });
+  }
+  function closeModal() {
+    var close = document.querySelector('.modal-close'),
+      modal = document.querySelector('.modal'),
+      overlay = document.querySelector('.overlay');
+    close.addEventListener('click', function () {
+      modal.classList.remove('active');
+      overlay.classList.remove('active');
+    });
+    overlay.addEventListener('click', function () {
+      modal.classList.remove('active');
+      overlay.classList.remove('active');
+    });
+  }
   switchTabs();
   smoothScroll();
   openMenu();
+  openModal();
+  closeModal();
 });
 /******/ })()
 ;

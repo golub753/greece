@@ -810,7 +810,7 @@
         }
         &-slider {
             &-photos {
-                height: 428px;
+                height: 345px;
             }
         }
         &-slide {
@@ -870,7 +870,7 @@
             }
             &-arr {
                 &--prev {
-                    left: 18%;
+                    left: 13%;
                     top: -60px;
                 }
                 &--next {
@@ -904,13 +904,13 @@
     .world {
         &_2 {
             width: 169px;
-            top: 40px;
             right: -47px;
+            top: 0px;
         }
         &_1 {
             width: 187px;
-            left: -43px;
-            top: 120px;
+            left: -76px;
+            top: 58px;
         }
         &-block {
             width: 100%;
@@ -1070,8 +1070,9 @@
         &-go {
             display: block;
             position: absolute;
-            top: 40px;
-            right: 11px;
+            right: 0px;
+            top: 0px;
+            z-index: -1;
         }
     }
     .rates {
@@ -1103,6 +1104,11 @@
                 font-size: 14px;
                 line-height: 100%;
             }
+        }
+        &-blocks {
+            grid-template-columns: 232px;
+            width: fit-content;
+            margin: 0 auto;
         }
         &-block {
             &-block {
@@ -1234,6 +1240,37 @@
             &:nth-child(8) {
                 display: none;
             }
+        }
+    }
+    .footer {
+        &-mail,
+        &-address,
+        &-unp,
+        &-politics,
+        &-pravila,
+        &-dogovor {
+            color: #f2e7d5;
+        }
+    }
+    .modal {
+        width: 400px;
+        height: 213px;
+        &-title {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 120%;
+            margin-bottom: 20px;
+        }
+        &-continue {
+            font-size: 15px;
+            height: 44px;
+            margin-bottom: 15px;
+            width: 277px;
+        }
+        &-not {
+            font-size: 11px;
+            height: 37px;
+            width: 160px;
         }
     }
 }

@@ -20,8 +20,8 @@ $(document).ready(() => {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
-                    centerPadding: '100px',
+                    slidesToShow: 3,
+                    centerPadding: '0',
                 },
             },
         ],
@@ -128,6 +128,7 @@ $(document).ready(() => {
     }
 
     function smoothScroll() {
+        const mainButton = document.querySelector('.main-button');
         const header = document.querySelector('.header');
         const smoothLinks = header.querySelectorAll('a[href^="#"]');
         const headerNav = document.querySelector('.header-nav'),
@@ -145,6 +146,15 @@ $(document).ready(() => {
                 });
             });
         }
+        mainButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            const id = mainButton.getAttribute('href');
+
+            document.querySelector(id).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        });
     }
 
     function openMenu() {
@@ -157,7 +167,44 @@ $(document).ready(() => {
         });
     }
 
+    function openModal() {
+        const btns = document.querySelectorAll('.rates-block-block-button'),
+            modal = document.querySelector('.modal'),
+            overlay = document.querySelector('.overlay'),
+            rates = document.querySelector('.rates-free-button');
+
+        btns.forEach((item) => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.classList.add('active');
+                overlay.classList.add('active');
+            });
+        });
+        rates.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('active');
+            overlay.classList.add('active');
+        });
+    }
+
+    function closeModal() {
+        const close = document.querySelector('.modal-close'),
+            modal = document.querySelector('.modal'),
+            overlay = document.querySelector('.overlay');
+
+        close.addEventListener('click', () => {
+            modal.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+        overlay.addEventListener('click', () => {
+            modal.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    }
+
     switchTabs();
     smoothScroll();
     openMenu();
+    openModal();
+    closeModal();
 });
