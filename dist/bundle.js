@@ -16,7 +16,14 @@ $(document).ready(function () {
     prevArrow: "<div class=\"helps-slide-arr helps-slide-arr--prev\">\n        <img src=\"../src/assets/helps_arrow.svg\" alt=\"\">\n        </div>",
     customPaging: function customPaging(slider, i) {
       return "<span class=\"active\">".concat(i + 1, "</span>/").concat(slider.slideCount);
-    }
+    },
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '100px'
+      }
+    }]
   });
   $('.helps-slider').slick('slickGoTo', 2);
   $('.authors-slider-photos').slick({
@@ -25,7 +32,14 @@ $(document).ready(function () {
     centerPadding: '100px',
     slidesToShow: 3,
     dots: false,
-    asNavFor: '.authors-slider-info'
+    asNavFor: '.authors-slider-info',
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        centerPadding: '0px'
+      }
+    }]
   });
   $('.authors-slider-info').slick({
     arrows: true,
@@ -43,7 +57,7 @@ $(document).ready(function () {
     infinite: false,
     mobileFirst: true,
     centerPadding: '30px',
-    slidesToShow: 3,
+    slidesToShow: 1,
     centerMode: true,
     dots: true,
     nextArrow: "<div class=\"speakers-persons-arr speakers-persons-arr--next\">\n        <img src=\"../src/assets/authors-arrow.svg\" alt=\"\">\n        </div>",
@@ -54,9 +68,26 @@ $(document).ready(function () {
     responsive: [{
       breakpoint: 1024,
       settings: 'unslick'
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
     }]
   });
   $('.speakers-persons').slick('slickGoTo', 3);
+  $('.info-right-stoun-tabs').slick({
+    infinite: false,
+    mobileFirst: true,
+    slidesToShow: 1,
+    dots: false,
+    nextArrow: "<div class=\"info-right-stoun-tabs-arr info-right-stoun-tabs-arr--next\">\n        <img src=\"../src/assets/info_arrow.svg\" alt=\"\">\n        </div>",
+    prevArrow: "<div class=\"info-right-stoun-tabs-arr info-right-stoun-tabs-arr--prev\">\n        <img src=\"../src/assets/info_arrow.svg\" alt=\"\">\n        </div>",
+    responsive: [{
+      breakpoint: 768,
+      settings: 'unslick'
+    }]
+  });
   function switchTabs() {
     var tabs = document.querySelectorAll('.info-right-stoun-tab'),
       contents = document.querySelectorAll('.info-right-stoun-content');
