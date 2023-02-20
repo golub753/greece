@@ -1058,7 +1058,7 @@
         }
     }
     .bloger {
-        padding: 298px 0 89px;
+        padding: 298px 0 45px;
         &-img {
             width: 253px;
         }
@@ -1078,6 +1078,10 @@
     }
     .rates {
         background: none;
+        padding-top: 45px;
+        &-top {
+            display: none;
+        }
         &-title {
             font-size: 40px;
             line-height: 120%;
@@ -1130,6 +1134,11 @@
                     height: 34px !important;
                     font-size: 14px !important;
                     line-height: 100% !important;
+                }
+            }
+            &:nth-child(2) {
+                .rates-block__img {
+                    left: 38%;
                 }
             }
         }

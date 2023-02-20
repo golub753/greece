@@ -107,7 +107,7 @@
             &:nth-child(28),
             &:nth-child(29),
             &:nth-child(30) {
-                display: none;
+                display: none !important;
             }
         }
         &-photos.slick-current {

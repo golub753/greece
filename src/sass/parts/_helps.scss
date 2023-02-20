@@ -27,22 +27,28 @@
             margin: 0;
             padding: 0;
             li {
-                display: none;
+                button {
+                    display: none;
+                    background: none;
+                    border: none;
+                }
             }
             li.slick-active {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 134px;
-                height: 44px;
-                background: #393e46;
-                box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.25), inset 2px 4px 6px rgba(255, 255, 255, 0.25);
-                border-radius: 10px;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 120%;
-                text-align: center;
-                color: #f2e7d5;
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 134px;
+                    height: 44px;
+                    background: #393e46;
+                    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.25), inset 2px 4px 6px rgba(255, 255, 255, 0.25);
+                    border-radius: 10px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 120%;
+                    text-align: center;
+                    color: #f2e7d5;
+                }
             }
         }
     }
