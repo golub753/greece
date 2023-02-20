@@ -13,9 +13,6 @@ $(document).ready(() => {
         prevArrow: `<div class="helps-slide-arr helps-slide-arr--prev">
         <img src="../src/assets/helps_arrow.svg" alt="">
         </div>`,
-        customPaging(slider, i) {
-            return `<span class="active">${i + 1}</span>/${slider.slideCount}`;
-        },
         responsive: [
             {
                 breakpoint: 768,
@@ -26,7 +23,7 @@ $(document).ready(() => {
             },
         ],
     });
-    $('.helps-slider').slick('slickGoTo', 2);
+    $('.helps-slider').slick('slickGoTo', 1);
     $('.authors-slider-photos').slick({
         arrows: false,
         infinite: false,
@@ -89,7 +86,7 @@ $(document).ready(() => {
             // },
         ],
     });
-    $('.speakers-persons').slick('slickGoTo', 3);
+    $('.speakers-persons').slick('slickGoTo', 1);
     $('.info-right-stoun-tabs').slick({
         infinite: false,
         mobileFirst: true,

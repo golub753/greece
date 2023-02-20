@@ -104,6 +104,11 @@
                 width: 150px;
                 height: 207px;
             }
+            &:nth-child(28),
+            &:nth-child(29),
+            &:nth-child(30) {
+                display: none;
+            }
         }
         &-photos.slick-current {
             z-index: 3;

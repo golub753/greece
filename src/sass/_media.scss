@@ -568,6 +568,7 @@
                 font-size: 13.2041px;
                 line-height: 100%;
                 &:nth-child(1) {
+                    padding-left: 20px;
                     &::after {
                         right: 19px;
                         top: -54px;
@@ -826,7 +827,7 @@
                     }
                 }
                 &-stolb {
-                    left: 50%;
+                    left: 53%;
                     transform: translateX(-50%);
                     position: absolute;
                     top: 135px;
@@ -847,7 +848,7 @@
                     }
                 }
                 .authors-slide-photos-stolb {
-                    left: 50%;
+                    left: 53%;
                     transform: translateX(-50%);
                     position: absolute;
                     top: 135px;
@@ -904,7 +905,7 @@
     .world {
         &_2 {
             width: 169px;
-            right: -47px;
+            right: -67px;
             top: 0px;
         }
         &_1 {

@@ -14,9 +14,6 @@ $(document).ready(function () {
     dots: true,
     nextArrow: "<div class=\"helps-slide-arr helps-slide-arr--next\">\n        <img src=\"../src/assets/helps_arrow.svg\" alt=\"\">\n        </div>",
     prevArrow: "<div class=\"helps-slide-arr helps-slide-arr--prev\">\n        <img src=\"../src/assets/helps_arrow.svg\" alt=\"\">\n        </div>",
-    customPaging: function customPaging(slider, i) {
-      return "<span class=\"active\">".concat(i + 1, "</span>/").concat(slider.slideCount);
-    },
     responsive: [{
       breakpoint: 768,
       settings: {
@@ -25,7 +22,7 @@ $(document).ready(function () {
       }
     }]
   });
-  $('.helps-slider').slick('slickGoTo', 2);
+  $('.helps-slider').slick('slickGoTo', 1);
   $('.authors-slider-photos').slick({
     arrows: false,
     infinite: false,
@@ -78,7 +75,7 @@ $(document).ready(function () {
     ]
   });
 
-  $('.speakers-persons').slick('slickGoTo', 3);
+  $('.speakers-persons').slick('slickGoTo', 1);
   $('.info-right-stoun-tabs').slick({
     infinite: false,
     mobileFirst: true,
