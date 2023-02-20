@@ -52,6 +52,36 @@
             line-height: 120%;
             text-align: center;
             color: #f7f7f7;
+            position: relative;
+            z-index: 2;
+            &::after {
+                font-family: 'DS Greece';
+                font-style: normal;
+                content: 'TikTok';
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 120%;
+                text-align: center;
+                color: #00d1ff;
+                position: absolute;
+                top: 26px;
+                left: 68px;
+                z-index: -1;
+            }
+            &::before {
+                content: 'TikTok';
+                font-family: 'DS Greece';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 120%;
+                text-align: center;
+                color: #ff4d4d;
+                position: absolute;
+                top: 24px;
+                left: 69px;
+                z-index: -1;
+            }
         }
         &:nth-child(4) {
             background: #00a3ff;
