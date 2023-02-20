@@ -47,7 +47,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     dots: true,
     nextArrow: "<div class=\"authors-slide-arr authors-slide-arr--next\">\n        <img src=\"../src/assets/authors-arrow.svg\" alt=\"\">\n        </div>",
-    prevArrow: "<div class=\"authors-slide-arr authors-slide-arr--prev\">\n        <img src=\"../src/assets/authors-arrow.svg\" alt=\"\">\n        </div>",
+    prevArrow: "<div class=\"authors-slide-arr authors-slide-arr--prev\">\n        <img src=\"../src/assets/authors-arrow-prev.svg\" alt=\"\">\n        </div>",
     customPaging: function customPaging(slider, i) {
       return "<span class=\"active\">".concat(i + 1, "</span>/").concat(slider.slideCount);
     },

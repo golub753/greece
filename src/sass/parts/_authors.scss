@@ -57,9 +57,6 @@
             &--prev {
                 top: -70px;
                 left: 0;
-                img {
-                    transform: rotate(180deg);
-                }
             }
             &--next {
                 top: -59px;
@@ -167,6 +164,7 @@
             }
         }
         &-info {
+            padding: 0 5px;
             &__name {
                 font-weight: 400;
                 font-size: 64px;

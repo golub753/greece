@@ -53,7 +53,7 @@ $(document).ready(() => {
         <img src="../src/assets/authors-arrow.svg" alt="">
         </div>`,
         prevArrow: `<div class="authors-slide-arr authors-slide-arr--prev">
-        <img src="../src/assets/authors-arrow.svg" alt="">
+        <img src="../src/assets/authors-arrow-prev.svg" alt="">
         </div>`,
         customPaging(slider, i) {
             return `<span class="active">${i + 1}</span>/${slider.slideCount}`;

@@ -870,7 +870,8 @@
             }
             &-arr {
                 &--prev {
-                    left: 11%;
+                    left: 18%;
+                    top: -60px;
                 }
                 &--next {
                     left: 73%;
@@ -889,8 +890,7 @@
                 }
                 &__link {
                     margin: 0px auto 20px;
-                    width: 92px;
-                    height: 24px;
+                    padding: 6px 10px;
                     font-size: 10px;
                     line-height: 120%;
                 }
@@ -904,12 +904,13 @@
     .world {
         &_2 {
             width: 169px;
-            top: 19px;
+            top: 40px;
             right: -47px;
         }
         &_1 {
             width: 187px;
             left: -43px;
+            top: 120px;
         }
         &-block {
             width: 100%;
@@ -971,7 +972,7 @@
     }
     .secrets {
         padding-bottom: 45px;
-        padding-top: 149px;
+        padding-top: 105px;
         &-palka {
             display: none;
         }
@@ -999,7 +1000,8 @@
         &-title {
             font-size: 40px;
             line-height: 120%;
-            margin-bottom: 20px;
+            max-width: 184px;
+            margin: 0 auto 20px;
         }
         &-text {
             font-size: 14px;
@@ -1065,8 +1067,15 @@
             font-size: 20px;
             line-height: 120%;
         }
+        &-go {
+            display: block;
+            position: absolute;
+            top: 40px;
+            right: 11px;
+        }
     }
     .rates {
+        background: none;
         &-title {
             font-size: 40px;
             line-height: 120%;
@@ -1119,6 +1128,7 @@
         }
     }
     .helps {
+        background-position: 58% 70%;
         &-title {
             font-size: 40px;
             line-height: 120%;
@@ -1186,6 +1196,7 @@
             grid-template-columns: repeat(2, minmax(1px, 165px));
         }
         &-block {
+            height: 44px;
             font-size: 20px !important;
             line-height: 120% !important;
             &::after,
@@ -1194,12 +1205,12 @@
                 line-height: 120% !important;
             }
             &::before {
-                left: 44px !important;
-                top: 38px !important;
+                left: 53px !important;
+                top: 9px !important;
             }
             &::after {
-                left: 45px !important;
-                top: 39px !important;
+                left: 56px !important;
+                top: 10px !important;
             }
         }
     }
