@@ -53,32 +53,36 @@ $(document).ready(function () {
     },
     asNavFor: '.authors-slider-photos'
   });
-  $('.speakers-persons').slick({
-    infinite: false,
-    mobileFirst: true,
-    centerPadding: '30px',
-    slidesToShow: 3,
-    centerMode: true,
-    dots: true,
-    nextArrow: "<div class=\"speakers-persons-arr speakers-persons-arr--next\">\n        <img src=\"../src/assets/authors-arrow.svg\" alt=\"\">\n        </div>",
-    prevArrow: "<div class=\"speakers-persons-arr speakers-persons-arr--prev\">\n        <img src=\"../src/assets/authors-arrow-prev.svg\" alt=\"\">\n        </div>",
-    customPaging: function customPaging(slider, i) {
-      return "<span class=\"active\">".concat(i + 1, "</span>/").concat(slider.slideCount);
-    },
-    responsive: [{
-      breakpoint: 1024,
-      settings: 'unslick'
-    }
-    // {
-    //     breakpoint: 768,
-    //     settings: {
-    //         slidesToShow: 3,
-    //     },
-    // },
-    ]
-  });
-
-  $('.speakers-persons').slick('slickGoTo', 1);
+  // $('.speakers-persons').slick({
+  //     infinite: false,
+  //     mobileFirst: true,
+  //     centerPadding: '30px',
+  //     slidesToShow: 3,
+  //     centerMode: true,
+  //     dots: true,
+  //     nextArrow: `<div class="speakers-persons-arr speakers-persons-arr--next">
+  //     <img src="../src/assets/authors-arrow.svg" alt="">
+  //     </div>`,
+  //     prevArrow: `<div class="speakers-persons-arr speakers-persons-arr--prev">
+  //     <img src="../src/assets/authors-arrow-prev.svg" alt="">
+  //     </div>`,
+  //     customPaging(slider, i) {
+  //         return `<span class="active">${i + 1}</span>/${slider.slideCount}`;
+  //     },
+  //     responsive: [
+  //         {
+  //             breakpoint: 1024,
+  //             settings: 'unslick',
+  //         },
+  //         // {
+  //         //     breakpoint: 768,
+  //         //     settings: {
+  //         //         slidesToShow: 3,
+  //         //     },
+  //         // },
+  //     ],
+  // });
+  // $('.speakers-persons').slick('slickGoTo', 1);
   $('.info-right-stoun-tabs').slick({
     infinite: false,
     mobileFirst: true,
