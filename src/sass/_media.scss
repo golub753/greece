@@ -621,7 +621,7 @@
     .info {
         &-chel {
             width: 252px;
-            top: 257px;
+            top: 295px;
             left: -18px;
         }
         &-left {
@@ -735,13 +735,16 @@
         &-persons {
             height: 154px !important;
             &-arr {
+                img {
+                    width: 32px;
+                }
                 &--prev {
-                    bottom: -77px;
-                    left: 21%;
+                    bottom: -68px;
+                    left: 32%;
                 }
                 &--next {
-                    bottom: -78px;
-                    left: 65%;
+                    bottom: -68px;
+                    left: 62%;
                 }
             }
         }
@@ -750,12 +753,13 @@
             transition: 0.3s;
             .speakers-person__img {
                 position: relative;
-                border: 2px solid #ffc85c;
+                border: 1px solid #fff;
                 width: 82.1px;
                 height: 103.06px;
                 transition: 0.3s;
                 &::after {
-                    border: 1px solid #fff;
+                    filter: blur(2.5px);
+                    border: 2px solid #ffc85c;
                     content: '';
                     position: absolute;
                     width: 100%;
@@ -782,12 +786,13 @@
             z-index: 2;
             .speakers-person__img {
                 position: relative;
-                border: 2px solid #ffc85c;
+                border: 1px solid #ffffff;
                 width: 94px;
                 height: 118px;
 
                 &::after {
-                    border: 1px solid #fff;
+                    filter: blur(2.5px);
+                    border: 2px solid #ffc85c;
                     content: '';
                     position: absolute;
                     width: 100%;
@@ -892,6 +897,9 @@
                     padding: 6px 10px;
                     font-size: 10px;
                     line-height: 120%;
+                    background: linear-gradient(99.09deg, #ad00ff 0%, #ff8a00 100%);
+                    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25), inset 2px 3px 4px rgba(255, 255, 255, 0.4),
+                        inset -2px -3px 4px rgba(0, 0, 0, 0.25);
                 }
                 &-li {
                     font-size: 10px;
